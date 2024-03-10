@@ -19,7 +19,7 @@ import pyautogui
 import csv
 
 
-instascraper_folder = "C:/Projects/Instascraper/"
+instascraper_folder = "C:/Projects/Instascraper_and_videomaker/"
 path_to_folder = os.path.join(instascraper_folder)
 print(path_to_folder)
 

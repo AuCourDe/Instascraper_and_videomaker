@@ -12,7 +12,7 @@ now = datetime.now()
 date_string = now.strftime("%d-%m-%Y-%H-%M-%S")
 
 
-instascraper_folder = "C:\\Projects\\Instascraper\\"
+instascraper_folder = "C:\\Projects\\Instascraper_and_vidomaker\\"
 keyword = config.keyword
 videos_add = "videos"
 final_add = f"AAA-{keyword}-final-video-{date_string}.mp4"
