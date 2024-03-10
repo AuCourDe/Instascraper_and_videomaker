@@ -20,7 +20,7 @@ import csv
 
 
 instascraper_folder = "C:/Projects/Instascraper/"
-path_to_folder = os.path.join(instascraper_folder, "cookies.png")
+path_to_folder = os.path.join(instascraper_folder)
 print(path_to_folder)
 
 
@@ -30,7 +30,7 @@ option.add_argument("--accept-lang=en")
 # option.add_argument("--start-maximized")
 option.add_argument('disable_infobars')
 
-#specify the path to chromedriver.exe (download and save on your computer)
+#specify the path to chromedriver - from Chrome version 120 not nedded to download.
 driver = webdriver.Chrome(options=option)
 
 #open the webpage
@@ -77,6 +77,7 @@ first_result = driver.find_element(By.XPATH, f'//span[text()="{keyword}"]')
 first_result.click()
 time.sleep(randint(3,5))
 
+# default download reels. Can be changed in config file
 triger = "reels"
 content_type_choose = config.content_type
 if content_type_choose == triger :
@@ -90,6 +91,7 @@ initial_height = driver.execute_script("return document.documentElement.scrollHe
 
 # Create a list to store htmls
 soups = []
+# scroll conunert configiuer in config file
 scroll_counter = 0
 max_scroll_counter = config.max_scroll_counter
 
