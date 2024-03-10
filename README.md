@@ -1,6 +1,7 @@
 # Instascraper and videomaker
 
 Download post and reels, make a one video from all.
+No API. Just Selenium, PyAutogui, BS4 and Moviepy
 
 # Instructions
 
